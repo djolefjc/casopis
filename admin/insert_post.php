@@ -34,7 +34,7 @@
             Kategorija:
           <td>
             <select name="category_id" id="cat">
-                <option value="category_id">
+                <option value="cat_id">
 
                 </option>
               <?php
@@ -51,7 +51,7 @@
                 $cat_id = $cats_row['cat_id'];
                 $cat_title = $cats_row['cat_title'];
 
-                echo "<option value='category_id'>
+                echo "<option value='$cat_id'>
                 $cat_title
                 </option>";
               }

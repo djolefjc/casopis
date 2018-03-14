@@ -10,7 +10,7 @@
     <div class="container" class="cf">
 
       <div id="head" class="cf">
-      <a href="#"> <img src="images/logo1.png" id="logo" /></a>
+      <a href="index.php"> <img src="images/logo1.png" id="logo" /></a>
 
 
       </div> <!-- end head -->
@@ -36,7 +36,7 @@
             include('includes/main_posts.php');
            ?>
 
-      </div> <!-- end post -->
+      </div> <!-- end main -->
 
       <div id="side" >
 

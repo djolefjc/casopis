@@ -225,3 +225,26 @@ a {margin:0px;
 #social a:hover {
 	color:rgba(0, 0, 0, 0.63);
 }
+
+/* details.php edit */
+
+.details-title {
+	font-size:24px;
+	text-align:center;
+}
+
+.details-img {
+	display:inline;
+	float:right;
+	padding:10px;
+}
+.details-end {
+	padding-left:10px;
+}
+.details-content {
+	padding:5px;
+}
+
+
+
+/* details.php edit end */
