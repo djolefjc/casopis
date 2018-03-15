@@ -7,7 +7,7 @@
     <title>Casopos+</title>
   </head>
   <body>
-    <div class="container" class="cf">
+    <div class="container cf">
 
       <div id="head" class="cf">
       <a href="index.php"> <img src="images/logo1.png" id="logo" /></a>
@@ -56,7 +56,7 @@
 
                                   echo "
 
-                                      <div class='details-post cf'>
+                                      <div class='details-post'>
 
                                           <h2 class='details-title'>
                                            $post_title
@@ -90,7 +90,8 @@
                             }
            ?>
 
-      </div> <!-- end post -->
+      </div> <!-- end  main -->
+
       <div id="side" >
 
             <div class="social-side">
@@ -114,37 +115,20 @@
 
             <?php
 
-            $run_posts = mysqli_query($con,  "SELECT * FROM posts ORDER BY rand() LIMIT 0,5");
-
-            while($row_posts = mysqli_fetch_array($run_posts))
-            {
-
-                    $post_id = $row_posts['post_id'];
-                    $post_title = $row_posts['post_title'];
-                    $post_image = $row_posts['post_image'];
-
-
-
-                    echo "
-
-                        <div class='one-side cf'>
-
-                            <h2 class='one-side-title'>
-                            <a href='details.php?post=$post_id'> $post_title </a>
-                            </h2>
-                                <a href='details.php?post=$post_id'>
-
-                            <img src='admin/news_images/$post_image'/>
-                            </a>
-
-                        </div> <br />
-
-                    ";
-            };
+          include('includes/side_posts.php');
 
          ?>
 
       </div><!-- end side -->
+
+      <!-- START COMMENT -->
+      <?php
+
+            include("includes/comment_form.php");
+       ?>
+      <!-- end comment -->
+
+
       <div id="footer">
 
         <div id="social">

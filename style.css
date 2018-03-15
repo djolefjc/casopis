@@ -114,6 +114,7 @@ a {margin:0px;
   background:#fff;
   margin-bottom:5px;
   margin-top:5px;
+	padding-bottom:10px;
 }
 
 .one-post {
@@ -228,6 +229,10 @@ a {margin:0px;
 
 /* details.php edit */
 
+.details-post {
+	margin-bottom:5px;
+}
+
 .details-title {
 	font-size:24px;
 	text-align:center;
@@ -245,6 +250,48 @@ a {margin:0px;
 	padding:5px;
 }
 
+
+/*comment section START */
+
+.comment {
+	width:895px;
+	background:#fff;
+	padding-bottom:5px;
+	
+	clear:left;
+}
+
+.comment-email {
+	margin-left:635px;
+	font-weight:bold;
+	padding:5px;
+
+}
+.comment-name {
+	margin-left:650px;
+	font-weight:bold;
+	padding:5px;
+
+}
+.comment-text {
+margin-left:420px;
+	padding-bottom:5px;
+
+}
+
+.com-button {
+
+ margin-left:420px;
+
+}
+.comment-title {
+	font-size:32px;
+	font-weight:bold;
+
+
+}
+
+/*comment section END */
 
 
 /* details.php edit end */
