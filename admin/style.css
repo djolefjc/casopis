@@ -1,0 +1,92 @@
+* {
+    padding:0px;
+    margin:0px;
+
+
+}
+
+#head {
+    width:100%;
+    height:150px;
+    font-size:20px;
+    text-align:center;
+    margin:0;
+    background:rgb(0, 51, 103);
+    border-bottom: 3px solid rgb(217, 150, 21);
+    display:block;
+}
+#head h1 {
+    padding:10px;
+    margin:0px;
+    position:relative;
+    top:60px;
+
+} /* END HEAD */
+
+#side {
+    float:left;
+    width:30%;
+    border-right:3px solid rgb(217, 150, 21);
+    height:800px;
+    background:rgb(0, 51, 103);
+    border-collapse: collapse;
+    display:inline;
+
+}
+.menu {
+    padding:5px;
+    font-size:24px;
+    text-align:center;
+}
+
+.menu a {
+    text-decoration:none;
+    color:#000;
+}
+.menu a:hover {
+    color:rgb(217, 150, 21);
+    text-shadow:1px 1px rgb(226, 224, 19);
+}
+.menu a:active {
+    color:rgb(217, 150, 21);
+}
+/* END side */
+
+/*INSERT POST START */
+#post-insert {
+    width:70%;
+    display:inline;
+    float:right;
+    background:rgb(0, 51, 103);
+    border-collapse: collapse;
+
+}
+
+#post-insert form {
+    width:100%;
+    margin:0 auto;
+    border-left:3px solid rgb(217, 150, 21);
+}
+.post-insert-all {
+    margin:0 auto;
+
+}
+form p {
+    font-size:24px;
+    color:#fff;
+    padding:5px;
+}
+input {
+    padding:5px;
+    margin:5px;
+}
+#button {
+    padding:5px;
+    margin:5px;
+}
+.edit {
+    margin:5px;
+}
+h2 {text-align:center; font-size:30px;}
+
+/*INSERT POST END */

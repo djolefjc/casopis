@@ -20,16 +20,17 @@
 
                         while($row_comments = mysqli_fetch_array($run_comments)) {
 
-                          $comment_name = $row_comments['com_name'];
-                          $comment_text = $row_comments['com_text'];
+                          $comments_name = $row_comments['com_name'];
+                          $comments_text = $row_comments['com_text'];
+                          $comments_date = $row_comments['com_date'];
 
                           echo "
 
                           <div class='comments'>
 
-                            <div class='comments-name'><h3>$comment_name kaze:</h3></div>
-                            <br />
-                            <div class='comments-text'><p>$comment_text</p></div>
+                            <div class='comments-name'><p>$comments_name kaze:</h3></div>
+                            <span class='comments-date'><p>$comments_date</p></span>
+                            <div class='comments-text'><p>$comments_text</p></div>
 
                           </div>
 
@@ -46,6 +47,7 @@
 
 
 <div class="comment">
+
 <span class="comment-title">
 Postavi komentar:
 </span>
@@ -65,8 +67,8 @@ Postavi komentar:
      </span>
    </div>
    <div class="comment-text">
-     <span id="com-input2"
-     ><textarea name="comment_text" cols="60" rows="20" />  </textarea>
+     <span id="com-input2">
+     <textarea name="comment_text" cols="60" rows="10" />  </textarea>
    </span>
    </div>
    <div class="com-button">
@@ -84,7 +86,7 @@ if(isset($_POST['comment_text'])) {
   $comment_email = $_POST['comment_email'];
   $comment_text = $_POST['comment_text'];
   $status = "unapprove";
-  $comment_date = date('d-m-y');
+  $comment_date = date('d-m-Y');
 
   if($comment_email=='' or $comment_text == '') {
     echo "<script>alert('Molimo Vas popunite sva polja')</script>";
@@ -96,19 +98,15 @@ if(isset($_POST['comment_text'])) {
     $query_comment = "INSERT INTO comments(post_id, com_email, com_name,
     com_text, com_date, status) VALUES ('$post_com_id','$comment_email','$comment_name',
     '$comment_text','$comment_date','$status')";
-
+}
 
     if(mysqli_query($con, $query_comment)) {
       echo "<script>alert('Vas komentar ce biti izbacen posle odobrenja.')</script>";
       echo"<script>window.open('details.php?post=$post_id')</script>";
     }
 
+
   }
-
-
-
-}
-
 
 ?>
 

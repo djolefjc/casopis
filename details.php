@@ -83,7 +83,8 @@
                                           </span>
                                             </div>
 
-                                      </div> <br />
+                                      </div>
+                                      <br />
 
                                   ";
                           }
@@ -91,6 +92,7 @@
            ?>
 
       </div> <!-- end  main -->
+
 
       <div id="side" >
 
@@ -121,7 +123,9 @@
 
       </div><!-- end side -->
 
+
       <!-- START COMMENT -->
+      <br />
       <?php
 
             include("includes/comment_form.php");
