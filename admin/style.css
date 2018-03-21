@@ -26,10 +26,10 @@
 #side {
     float:left;
     width:30%;
-    border-right:3px solid rgb(217, 150, 21);
+
     height:800px;
     background:rgb(0, 51, 103);
-    border-collapse: collapse;
+
     display:inline;
 
 }
@@ -58,35 +58,13 @@
     display:inline;
     float:right;
     background:rgb(0, 51, 103);
-    border-collapse: collapse;
-
 }
 
-#post-insert form {
-    width:100%;
+#post_insert form h2 {
     margin:0 auto;
-    border-left:3px solid rgb(217, 150, 21);
+    font-size:32;
 }
-.post-insert-all {
-    margin:0 auto;
 
-}
-form p {
-    font-size:24px;
-    color:#fff;
-    padding:5px;
-}
-input {
-    padding:5px;
-    margin:5px;
-}
-#button {
-    padding:5px;
-    margin:5px;
-}
-.edit {
-    margin:5px;
-}
-h2 {text-align:center; font-size:30px;}
+
 
 /*INSERT POST END */
