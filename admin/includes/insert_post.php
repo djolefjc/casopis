@@ -1,6 +1,7 @@
 
     <script src="../js/ckeditor/ckeditor.js"></script>
-    <div id="post-insert">
+    <div class="post-insert">
+
     <form action="insert_post.php" method="post" enctype="multipart/form-data">
 
 
@@ -11,15 +12,15 @@
          <p>
             Naziv:
         </p>
-         <div class="post-insert-all">
+         <div class="post-insert-text">
             <input type="text" name="post_title" size="80" />
-            </div> <!-- end post-insert title -->
+          </div> <!-- end post-insert text -->
 
             <p>
             Autor:
         </p>
 
-            <div id class="post-insert-all">
+             <div class="post-insert-text">
 
            <input type="text" name="post_author" size="80" />
 
@@ -27,20 +28,17 @@
         <p>
         Kljucne reci:
     </p>
-        <div class="post-insert-all">
-
-            <input type="text" name="post_keywords" size="80" />
+         <div class="post-insert-text">
+                     <input type="text" name="post_keywords" size="80" />
         </div> <!-- END post-insert-key -->
 
-        <p>    Slika: </p>
-            <div class="post-insert-all">
-
-          <td>
+        <p class="p-img">    Slika: </p>
+            <div class="post-insert-img">
             <input type="file" name="post_image" size="80" />
         </div> <!-- END post-insert-picture -->
 
-        <p>   Sadrzaj: </p>
-            <div class="post-insert-all edit">
+        <p class="p-con">   Sadrzaj: </p>
+            <div class="post-insert-content">
 
 
 <textarea name="post_content" id="editor"></textarea>
@@ -54,8 +52,8 @@ CKEDITOR.config.width = 600;
 
         </div> <!-- END post-insert-content -->
 
-        <div class="post-insert-all cat">
-      <p>
+        <div class="post-insert-cat">
+      <p class="post-insert-text">
         Kategorija:
     </p>
         <select name="category_id" id="cat">
@@ -85,7 +83,7 @@ CKEDITOR.config.width = 600;
         </select>
     </div> <!-- END post-insert-cat -->
 
-            <input type="submit" name="submit" value="Objavi" id="button" />
+            <input type="submit" name="submit" value="Objavi" id="post-insert-button" />
 
     </form id="form-post">
 </div> <!-- END insert-post -->

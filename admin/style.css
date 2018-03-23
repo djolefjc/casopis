@@ -26,7 +26,6 @@
 #side {
     float:left;
     width:30%;
-
     height:800px;
     background:rgb(0, 51, 103);
 
@@ -53,18 +52,55 @@
 /* END side */
 
 /*INSERT POST START */
-#post-insert {
-    width:70%;
-    display:inline;
-    float:right;
-    background:rgb(0, 51, 103);
+.post-insert {
+  width:1330px;
+  float:right;
+  background:rgb(0, 51, 103);
+  border-left:2px solid rgb(217, 150, 21);
+    border-bottom:2px solid rgb(217, 150, 21);
+
+}
+.post-insert h2 {
+  text-align:center;
+  padding:20px;
+  font-size:32px;
 }
 
-#post_insert form h2 {
-    margin:0 auto;
-    font-size:32;
+.post-insert p {
+  padding:5px;
+  font-size:20px;
+  margin-left:400px;
+
+}
+.post-insert-text  {
+  margin-left:400px;
 }
 
+.post-insert-img {
+  margin-left:815px;
+  display:inline;
 
+}
 
+.post-insert-content {
+  margin-left:400px;
+}
+
+.post-insert-cat {
+  margin-left:400px;
+}
+.post-insert-cat p {
+  margin-left:1px;
+  padding-bottom:5px;
+}
+.post-insert-cat select {
+  width:150px;
+  font-size:24px;
+}
+#post-insert-button
+{
+  margin-left:685px;
+  padding:10px;
+  margin-bottom:10px;
+}
 /*INSERT POST END */
