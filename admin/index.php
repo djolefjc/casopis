@@ -73,6 +73,9 @@
             if(isset($_GET['insert_cat'])) {
                 include('includes/insert_cat.php');
             }
+            if(isset($_GET['view_cats'])) {
+                include('includes/view_cats.php');
+            }
             ?>
         </div><!-- END main -->
 

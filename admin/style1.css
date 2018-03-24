@@ -195,7 +195,7 @@ form img {
 
 }
 /* END VIEW POSTS */
-/* START INSERT CAT */
+/* START EDIT CAT */
 .insert-cat {
     height:600px;
     width:897px;
@@ -218,4 +218,7 @@ form img {
 .insert-cat form input {
     padding:5px;
 }
+.cat-tab {
+    position:relative;
+    left:240px;
 /*END INSERT CAT */
