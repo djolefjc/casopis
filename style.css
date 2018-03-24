@@ -127,6 +127,8 @@ a {margin:0px;
     padding-left:10px;
     padding-right:10px;
     float:left;
+	width:260px;
+	height:270px;
 }
 .one-post {
     width:95%;
@@ -201,8 +203,13 @@ a {margin:0px;
     display:block;
     margin:0 auto;
     padding-top:10px;
+	width:260px;
+	height:270px;
 }
 
+.date-author {
+	padding-top:10px;
+}
 
 /* END SIDE*/
 
@@ -242,6 +249,11 @@ a {margin:0px;
 	display:inline;
 	float:right;
 	padding:10px;
+
+}
+.details-img img {
+	width:260px;
+	height:270px;
 }
 .details-end {
 	padding-left:10px;

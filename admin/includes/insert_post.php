@@ -1,8 +1,8 @@
 
     <script src="../js/ckeditor/ckeditor.js"></script>
     <div class="post-insert">
-
-    <form action="insert_post.php" method="post" enctype="multipart/form-data">
+    <link href="../style1.css" rel="stylesheet" type="text/css" />
+    <form action="index.php?insert_post" method="post" enctype="multipart/form-data">
 
 
           <h2>
@@ -63,7 +63,7 @@ CKEDITOR.config.width = 600;
           <?php
 
 
-          include("includes/database.php");
+          include("database.php");
 
 
 
@@ -107,11 +107,11 @@ if(isset($_POST['submit'])) {
 
 
       echo "<script>alert('Molimo vas popunite sva polja.')</script>";
-      echo "<script>window.open('insert_post.php','_self')</script>";
+      echo "<script>window.open('index.php?insert_post','_self')</script>";
 
 }
 else {
-  move_uploaded_file($post_image_tmp,"images/$post_image");
+  move_uploaded_file($post_image_tmp,"news_images/$post_image");
 
   $insert_posts = "INSERT INTO posts(category_id, post_title, post_date,
   post_author, post_keywords, post_image, post_content)
