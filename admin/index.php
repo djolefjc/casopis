@@ -33,7 +33,7 @@
             </div>
 
             <div class="menu">
-                <a href="index.php?view_comments">
+                <a href="index.php?view_com">
                     POGLEDAJ SVE KOMENTARE
                 </a>
             </div>
@@ -71,6 +71,15 @@
 
             if(isset($_GET['edit_cats'])) {
                 include('includes/edit_cats.php');
+            }
+            if(isset($_GET['view_com'])) {
+              include('includes/view_com.php');
+            }
+            if(isset($_GET['unapprove'])) {
+              include('includes/com_status.php');
+            }
+            if(isset($_GET['approve'])) {
+              include('includes/com_status.php');
             }
             ?>
         </div><!-- END main -->

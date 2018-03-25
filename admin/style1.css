@@ -140,16 +140,19 @@
 /*INSERT POST END */
 /* START VIEW POSTS */
 .view-posts {
-    width:897px;
-    float:right;
-    background:rgb(0, 51, 103);
-    border-left:3px solid rgb(217, 150, 21);
+  width:897px;
+  float:right;
+  background:rgb(0, 51, 103);
+  border-left:3px solid rgb(217, 150, 21);
+
 }
 
 .view-posts table {
     border-spacing:0px;
     border-collapse:collapse;
     margin:5px;
+
+
 }
 
 
