@@ -220,17 +220,17 @@ a {margin:0px;
   clear:both;
 }
 
-#social {
+.social {
   position:relative;
 	text-align:center;
 
 }
 
-#social a {
+.social a {
 	color:rgb(101, 125, 98);
 }
 
-#social a:hover {
+.social a:hover {
 	color:rgba(0, 0, 0, 0.63);
 }
 

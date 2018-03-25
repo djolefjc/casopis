@@ -16,7 +16,7 @@
                         $post_content = $row_posts['post_content'];
 
 
-                        $post_content = substr($post_content,0,1300);
+                        $post_content = substr($post_content,0,800);
 
                         echo "
 
@@ -72,7 +72,7 @@
                                           $post_content = $row_posts['post_content'];
 
 
-                                          $post_content = substr($post_content,0,1300);
+                                          $post_content = substr($post_content,0,800);
 
                                           echo "
 

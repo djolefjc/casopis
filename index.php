@@ -44,7 +44,7 @@
               <p>
             Zapratite Nas
           </p>
-              <div id="social">
+              <div class="social">
                 <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
                   <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
                   <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
@@ -68,7 +68,7 @@
       </div><!-- end side -->
       <div id="footer">
 
-        <div id="social">
+        <div class="social">
           <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
             <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
             <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>

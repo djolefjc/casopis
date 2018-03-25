@@ -38,7 +38,7 @@
 
 
 
-        <td><a href="index.php?edit_cat=<?php echo $cat_id; ?>">Izmeni</a></td>
+        <td><a href="index.php?edit_cats=<?php echo $cat_id; ?>">Izmeni</a></td>
         <td><a href="includes/delete_cat.php?delete_cat=<?php echo $cat_id; ?>">Izbrisi</a></td>
 
         </tr>
@@ -48,6 +48,11 @@
          ?>
         </table>
     </div> <!--end VIEW CATS -->
+
+<?php
+        include('insert_cat.php');
+ ?>
+
 
     </body>
 </html>

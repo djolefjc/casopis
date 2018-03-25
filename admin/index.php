@@ -27,12 +27,6 @@
             </div>
 
             <div class="menu">
-                <a href="index.php?insert_cat">
-                    UBACI NOVU KATEGORIJU
-                </a>
-            </div>
-
-            <div class="menu">
                 <a href="index.php?view_cats">
                     POGLEDAJ SVE KATEGORIJE
                 </a>
@@ -70,11 +64,13 @@
             if(isset($_GET['edit_post'])) {
                 include('includes/edit_post.php');
             }
-            if(isset($_GET['insert_cat'])) {
-                include('includes/insert_cat.php');
-            }
+
             if(isset($_GET['view_cats'])) {
                 include('includes/view_cats.php');
+            }
+
+            if(isset($_GET['edit_cats'])) {
+                include('includes/edit_cats.php');
             }
             ?>
         </div><!-- END main -->
