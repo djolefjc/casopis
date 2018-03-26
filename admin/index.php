@@ -46,9 +46,23 @@
         </div><!-- END side -->
         <div id="main">
             <div class="notifications">
-            <span class='com-notification'> <a href="">
-                    Komentari(0)
-                </a></span>
+            <span class='com-notification'>
+                    Komentari
+                    <?php
+
+                    include('includes/database.php');
+
+
+
+                    $run_comments = mysqli_query($con, "SELECT * FROM comments WHERE status = 'unapprove'");
+
+                    $count_comments = mysqli_num_rows($run_comments);
+
+                    echo "( <a href='index.php?view_com'>" . $count_comments . "</a>)";
+
+                     ?>
+
+              </span>
             </div> <!-- END notifications -->
             <?php
 
@@ -74,13 +88,15 @@
             }
             if(isset($_GET['view_com'])) {
               include('includes/view_com.php');
+
             }
-            if(isset($_GET['unapprove'])) {
-              include('includes/com_status.php');
-            }
-            if(isset($_GET['approve'])) {
-              include('includes/com_status.php');
-            }
+                          if(isset($_GET['approve'])) {
+                            include('includes/com_status.php');
+                          }
+                          if(isset($_GET['unapprove'])) {
+                            include('includes/com_status.php');
+                          }
+
             ?>
         </div><!-- END main -->
 

@@ -102,7 +102,7 @@ if(isset($_POST['comment_text'])) {
 
     if(mysqli_query($con, $query_comment)) {
       echo "<script>alert('Vas komentar ce biti izbacen posle odobrenja.')</script>";
-      echo"<script>window.open('details.php?post=$post_id')</script>";
+      
     }
 
 

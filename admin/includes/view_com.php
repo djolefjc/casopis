@@ -34,7 +34,7 @@
                 $com_text = $row_comments['com_text'];
                 $com_date = $row_comments['com_date'];
                 $status = $row_comments['status'];
-
+                $post_id = $row_comments['post_id'];
 
 
 
@@ -67,31 +67,10 @@
     }
          ?>
         </table>
+</div> <!--end VIEW CATS -->
 
-        <?php
 
-        if(isset($_GET['unapprove'])) {
 
-          $unapprove_id = $_GET['unapprove'];
-
-          $run_approve_comment = mysqli_query($con, "UPDATE comments SET status='unapprove' WHERE com_id='$com_id'") or die(mysqli_error($con)) ;
-
-          echo "<script>alert('Komentar uklonjen')</script>";
-          echo "<script>window.open('../index.php?view_com','_self')</script>";
-
-        }
-        if(isset($_GET['approve'])) {
-
-          $approve_id = $_GET['approve'];
-
-          $run_unapprove_comment = mysqli_query($con, "UPDATE comments SET status='approve' WHERE com_id='$com_id'") or die(mysqli_error($con));
-
-          echo "<script>alert('Komentar izbacen')</script>";
-          echo "<script>window.open('../index.php?view_com','_self')</script>";
-
-        }
-         ?>
-    </div> <!--end VIEW CATS -->
 
   </body>
   </html>
