@@ -73,6 +73,22 @@ a {margin:0px;
   float:left;
   margin-left:20px;
 }
+
+.lock {
+	float:right;
+	margin-right:145px;
+	margin-top:25px;
+}
+.lock a {
+	font-size:32px;
+		color:#000;
+
+}
+.lock a:hover {
+
+	color:rgba(0, 0, 0, 0.63);
+
+}
 #navbar {
   height:50px;
   width:100%;

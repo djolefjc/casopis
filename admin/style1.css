@@ -224,4 +224,36 @@ form img {
 .cat-tab {
     position:relative;
     left:240px;
+  }
 /*END INSERT CAT */
+/* START login */
+
+.container-login {
+  height:100%;
+  width:100%;
+  background:rgb(101, 125, 98);
+  position:absolute;
+}
+
+.login {
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-50px;
+  margin-top:-50px;
+}
+
+.login span {
+  margin:5px;
+}
+
+.login input {
+  margin:5px;
+}
+
+.login button {
+  margin:5px;
+}
+
+
+/* END login */

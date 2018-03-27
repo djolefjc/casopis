@@ -11,6 +11,7 @@
 
       <div id="head" class="cf">
       <a href="index.php"> <img src="images/logo1.png" id="logo" /></a>
+    <div class="lock"> <a href="admin/login.php"><i class="fas fa-unlock-alt"></i></a> </div>
 
 
       </div> <!-- end head -->

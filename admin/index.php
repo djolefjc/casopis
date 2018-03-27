@@ -96,6 +96,7 @@
                           if(isset($_GET['unapprove'])) {
                             include('includes/com_status.php');
                           }
+            
 
             ?>
         </div><!-- END main -->
