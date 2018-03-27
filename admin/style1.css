@@ -80,6 +80,11 @@
     color:rgb(217, 150, 21);
     text-shadow:1px 1px rgb(226, 224, 19);
 }
+
+.vis-notifications {
+    font-weight:bold;
+    font-size:20px;
+}
 /* END notifications */
 /*INSERT POST START */
 .post-insert {

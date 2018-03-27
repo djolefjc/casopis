@@ -69,9 +69,15 @@ else {
 
                     $count_comments = mysqli_num_rows($run_comments);
 
-                    echo "( <a href='index.php?view_com'>" . $count_comments . "</a>)";
+                    echo "(<a href='index.php?view_com'>" . $count_comments . "</a>)  |";
 
                      ?>
+
+              </span>
+              <span class="vis-notifications">
+                  <?php
+                  include('../counter.php');
+                   ?>
 
               </span>
             </div> <!-- END notifications -->
