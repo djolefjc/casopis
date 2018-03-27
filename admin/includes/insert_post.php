@@ -1,3 +1,14 @@
+<?php
+@session_start();
+
+if(!isset($_SESSION['user_name'])) {
+
+    echo "<script>window.open('../login.php?not_authorize=Nemate dozvolu!','_self')</script>";
+}
+else {
+
+
+?>
 
     <script src="../js/ckeditor/ckeditor.js"></script>
     <div class="post-insert">
@@ -123,6 +134,7 @@ $cc = mysqli_query($con, $insert_posts)
 
  echo "<script>alert('Uspesno ste objavili novi clanak!')</script>";
 
+}
 }
 }
  ?>

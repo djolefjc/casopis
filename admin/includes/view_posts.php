@@ -1,3 +1,15 @@
+<?php
+@session_start();
+
+if(!isset($_SESSION['user_name'])) {
+
+    echo "<script>window.open('../login.php?not_authorize=Nemate dozvolu!','_self')</script>";
+}
+else {
+
+
+ ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -64,3 +76,7 @@
 
     </body>
 </html>
+
+<?php
+}
+ ?>

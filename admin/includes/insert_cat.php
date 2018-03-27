@@ -1,3 +1,17 @@
+<?php
+@session_start();
+
+if(!isset($_SESSION['user_name'])) {
+
+    echo "<script>window.open('../login.php?not_authorize=Nemate dozvolu!','_self')</script>";
+}
+else {
+
+
+
+ ?>
+
+
 <div class="insert-cat"> <!-- START insert-cat -->
 <form action="index.php?view_cats" method="post">
 <div class="insert-cat-text" >
@@ -28,5 +42,5 @@ echo "<script>alert('Uspesno ste ubacili novu kategoriju!')</script>";
 echo "<script>window.open('index.php?view_cats','_self')</script>";
 }
 }
-
+}
 ?>

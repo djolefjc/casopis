@@ -1,4 +1,14 @@
+<?php
+@session_start();
 
+if(!isset($_SESSION['user_name'])) {
+
+    echo "<script>window.open('../login.php?not_authorize=Nemate dozvolu!','_self')</script>";
+}
+else {
+
+
+ ?>
     <script src="../js/ckeditor/ckeditor.js"></script>
     <div class="post-insert">
     <link href="../style1.css" rel="stylesheet" type="text/css" />
@@ -161,6 +171,7 @@ mysqli_query($con, $update_posts)
  echo "<script>alert('Uspesno ste azurirali clanak!')</script>";
  echo "<script>window_open('index.php?view_posts','_self')</script>";
 
+}
 }
 }
  ?>

@@ -1,4 +1,4 @@
-* {
+-form* {
     padding:0px;
     margin:0px;
 
@@ -235,7 +235,7 @@ form img {
   position:absolute;
 }
 
-.login {
+.login-form {
   position:absolute;
   left:50%;
   top:50%;
@@ -243,15 +243,15 @@ form img {
   margin-top:-50px;
 }
 
-.login span {
+.login-form span {
   margin:5px;
 }
 
-.login input {
+.login-form input {
   margin:5px;
 }
 
-.login button {
+.login-form button {
   margin:5px;
 }
 

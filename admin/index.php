@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['user_name'])) {
+
+    echo "<script>window.open('login.php?not_authorize=Nemate dozvolu!','_self')</script>";
+}
+else {
+
+ ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -39,7 +50,7 @@
             </div>
 
             <div class="menu">
-                <a href="index.php?logout">
+                <a href="logout.php">
                     ODJAVI SE
                 </a>
             </div>
@@ -65,6 +76,7 @@
               </span>
             </div> <!-- END notifications -->
             <?php
+
 
             if(isset($_GET['insert_post'])) {
 
@@ -96,7 +108,7 @@
                           if(isset($_GET['unapprove'])) {
                             include('includes/com_status.php');
                           }
-            
+
 
             ?>
         </div><!-- END main -->
@@ -104,3 +116,6 @@
     </div> <!-- ENC container -->
     </body>
 </html>
+<?php
+}
+ ?>

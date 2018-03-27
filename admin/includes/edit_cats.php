@@ -1,3 +1,11 @@
+<?php@session_start();
+
+if(!isset($_SESSION['user_name'])) {
+
+    echo "<script>window.open('../login.php?not_authorize=Nemate dozvolu!','_self')</script>";
+}
+else {
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -61,3 +69,6 @@ echo "<script>window.open('index.php?view_cats','_self')</script>";
 ?>
 </body>
 </html>
+<?php
+}
+ ?>
