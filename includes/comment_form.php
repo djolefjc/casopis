@@ -67,7 +67,7 @@ Postavi komentar:
      </span>
    </div>
    <div class="comment-text">
-     <span id="com-input2">
+     <span class="com-input2">
      <textarea name="comment_text" cols="60" rows="10" />  </textarea>
    </span>
    </div>
@@ -102,7 +102,7 @@ if(isset($_POST['comment_text'])) {
 
     if(mysqli_query($con, $query_comment)) {
       echo "<script>alert('Vas komentar ce biti izbacen posle odobrenja.')</script>";
-      
+
     }
 
 
