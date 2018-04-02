@@ -7,10 +7,11 @@
     <title>Casopos+</title>
   </head>
   <body>
-    <div class="container" class="cf">
+    <div class="container cf">
 
       <div id="head" class="cf">
       <a href="index.php"> <img src="images/logo1.png" id="logo" /></a>
+    <div class="lock"> <a href="admin/login.php"><i class="fas fa-unlock-alt"></i></a> </div>
 
 
       </div> <!-- end head -->
@@ -56,7 +57,7 @@
 
                                   echo "
 
-                                      <div class='details-post cf'>
+                                      <div class='details-post'>
 
                                           <h2 class='details-title'>
                                            $post_title
@@ -83,21 +84,24 @@
                                           </span>
                                             </div>
 
-                                      </div> <br />
+                                      </div>
+                                      <br />
 
                                   ";
                           }
                             }
            ?>
 
-      </div> <!-- end post -->
+      </div> <!-- end  main -->
+
+
       <div id="side" >
 
             <div class="social-side">
               <p>
             Zapratite Nas
           </p>
-              <div id="social">
+              <div class="social">
                 <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
                   <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
                   <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
@@ -114,40 +118,25 @@
 
             <?php
 
-            $run_posts = mysqli_query($con,  "SELECT * FROM posts ORDER BY rand() LIMIT 0,5");
-
-            while($row_posts = mysqli_fetch_array($run_posts))
-            {
-
-                    $post_id = $row_posts['post_id'];
-                    $post_title = $row_posts['post_title'];
-                    $post_image = $row_posts['post_image'];
-
-
-
-                    echo "
-
-                        <div class='one-side cf'>
-
-                            <h2 class='one-side-title'>
-                            <a href='details.php?post=$post_id'> $post_title </a>
-                            </h2>
-                                <a href='details.php?post=$post_id'>
-
-                            <img src='admin/news_images/$post_image'/>
-                            </a>
-
-                        </div> <br />
-
-                    ";
-            };
+          include('includes/side_posts.php');
 
          ?>
 
       </div><!-- end side -->
+
+
+      <!-- START COMMENT -->
+      <br />
+      <?php
+
+            include("includes/comment_form.php");
+       ?>
+      <!-- end comment -->
+
+
       <div id="footer">
 
-        <div id="social">
+        <div class="social">
           <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
             <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
             <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>

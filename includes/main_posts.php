@@ -16,7 +16,7 @@
                         $post_content = $row_posts['post_content'];
 
 
-                        $post_content = substr($post_content,0,1500);
+                        $post_content = substr($post_content,0,800);
 
                         echo "
 
@@ -38,12 +38,14 @@
                                     <a href='details.php?post=$post_id'> [Procitaj Sve] </a>
                                 </div>
 
+                                <div class='date-author'>
                                 <span class='one-date'>
                                  $post_date
                                 </span>
                                 <span class='one-author'>
                                 $post_author
                                 </span>
+                                </div>
 
                             </div> <br />
 
@@ -70,7 +72,7 @@
                                           $post_content = $row_posts['post_content'];
 
 
-                                          $post_content = substr($post_content,0,1500);
+                                          $post_content = substr($post_content,0,800);
 
                                           echo "
 
@@ -91,14 +93,14 @@
                                                       $post_content
                                                       <a href='details.php?post=$post_id'> [Procitaj Sve] </a>
                                                   </div>
-
+                                                  <div class='date-author'>
                                                   <span class='one-date'>
                                                    $post_date
                                                   </span>
                                                   <span class='one-author'>
                                                   $post_author
                                                   </span>
-
+                                                  </div>
                                               </div> <br />
 
                                           ";
