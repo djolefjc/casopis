@@ -14,4 +14,4 @@ https://casopis.000webhostapp.com/ </p>
 <p> Feel free to comment, and make posts. The idea is to confront issues of maintaining a website so that I can learn from
   it and expand my web development skills. </p> 
   
-<p> Technologies used for this project: HTML, CSS, PHP and a bit of Javascript. </p>
+<p> Technologies used for this project: HTML, CSS, PHP with mysqli and a bit of Javascript. </p>
