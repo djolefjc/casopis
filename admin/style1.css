@@ -201,6 +201,7 @@ form img {
     margin-left:380px;
 
 
+
 }
 /* END VIEW POSTS */
 /* START EDIT CAT */
@@ -214,6 +215,7 @@ form img {
 .insert-cat-text {
     text-align:center;
     margin-top:250px;
+
 }
 .insert-cat form {
     margin:5px;
@@ -240,6 +242,7 @@ form img {
   position:absolute;
 }
 
+
 .login-form {
   position:absolute;
   left:50%;
@@ -262,6 +265,8 @@ form img {
 
 
 /* END login */
+
 /* START view-com */
 
 /* END view-con */
+
