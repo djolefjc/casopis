@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <title>Casopos+</title>
+
   </head>
   <body>
-    <div class="container" class="cf">
+
 
       <div id="head" class="cf">
       <a href="index.php"> <img src="images/logo1.png" id="logo" /></a>
@@ -17,7 +17,7 @@
       <div id="navbar" class="cf">
 
 
-        <ul id="menu">
+        <ul>
 
             <?php
 
@@ -29,6 +29,9 @@
 
 
       </div> <!-- end navbar -->
+    <div class="container" class="cf">
+
+
       <div id="main" >
 
           <?php
@@ -66,16 +69,35 @@
          ?>
 
       </div><!-- end side -->
-      <div id="footer">
 
-        <div class="social">
-          <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
-            <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
-            <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
-        </div>
 
 
 
     </div><!-- end container -->
+
+    <div id="footer">
+
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+          <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+      </div>
+
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
   </body>
 </html>

@@ -7,7 +7,6 @@
     <title>Casopos+</title>
   </head>
   <body>
-    <div class="container cf">
 
       <div id="head" class="cf">
       <a href="index.php"> <img src="images/logo1.png" id="logo" /></a>
@@ -30,6 +29,9 @@
 
 
       </div> <!-- end navbar -->
+    <div class="container cf">
+
+
       <div id="main" >
 
           <?php
@@ -145,5 +147,27 @@
 
 
     </div><!-- end container -->
+
+    <div id="footer">
+
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+          <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+      </div>
+      <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
   </body>
 </html>
