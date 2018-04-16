@@ -27,6 +27,11 @@
 
         </ul>
 
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
+            <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+        </div>
 
       </div> <!-- end navbar -->
     <div class="container cf">
@@ -99,18 +104,7 @@
 
       <div id="side" >
 
-            <div class="social-side">
-              <p>
-            Zapratite Nas
-          </p>
-              <div class="social">
-                <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
-                  <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
-                  <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
-              </div>
-            </div>
-
-
+        
 
             <div class="side-title">
                <p>
@@ -136,25 +130,33 @@
       <!-- end comment -->
 
 
-      <div id="footer">
-
-        <div class="social">
-          <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
-            <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
-            <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
-        </div>
 
 
 
     </div><!-- end container -->
 
-    <div id="footer">
 
-      <div class="social">
+
+    <div id="footer">
+        <div class="info-footer">
+            <h4>Casopis+</h4>
+            <p>
+                Omladinskih brigada 5/11
+            </p>
+            <p>
+                Beograd, 11000
+            </p>
+            <span><i class="fas fa-phone-square"></i></span> 066/5555 444 <br />
+        <span>    <i class="fas fa-envelope-square"></i></span> casopisplus@info.com
+        </div> <!-- END info-footer -->
+      <div class="social social-foot">
         <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
           <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
           <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
       </div>
+    </div> <!-- END footer -->
+
+
       <script>
   window.onscroll = function() {myFunction()};
 

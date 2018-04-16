@@ -49,6 +49,9 @@ table {
 /* start css */
 body {
   background:rgb(101, 125, 98);
+  font-family:Verdana, sans-serif;
+  font-size:15px;
+
 }
 .container {
     width:1200px;
@@ -63,7 +66,7 @@ a {margin:0px;
   content:"";
   clear:both;
 }
-
+/* head start */
 #head {
   background:#fff;
   width:100%;
@@ -89,14 +92,49 @@ a {margin:0px;
 	color:rgba(0, 0, 0, 0.63);
 
 }
+/* END head */
+/* START nav */
+
+
 #navbar {
-  height:50px;
-  width:100%;
-  background:#000;
+background:#000;
+width:100%;
+}
 
 
+#navbar ul li {
+float:left;
+}
+#navbar ul li a {
+	float: left;
+	  font-size: 16px;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+}
+
+
+#navbar ul li a:hover {
+background:#fff;
+color:#000;
+}
+#navbar .social {
+	width:150px;
+	float:right;
+	margin-right:20px;
+}
+#navbar .social a {
+	color:#fff;
 
 }
+#navbar .social a:hover {
+	margin: 0px 5px 0px 5px;
+
+}
+
+/* STICKY NAVIGATION ADD */
+
 .sticky {
   position: fixed;
   top: 0;
@@ -110,46 +148,54 @@ a {margin:0px;
   padding-top: 60px;
 }
 
-#navbar ul {
-  line-height:50px;
-  text-align: center;
-  vertical-align: middle;
-}
 
-#navbar ul li {
-  list-style-type:none;
-  display:inline;
-
-}
-
-#navbar ul li a {
-  text-decoration:none;
-  color:#fff;
-  font-size:30px;
-  padding-left:10px;
-  padding-right:10px;
-
-
-}
-#navbar ul li a:hover {
-  background:#fff;
-  color:#000;
-}
-
+/* END nav */
 /* Posts */
 #main {
   width:895px;
   float:left;
   background:#fff;
 
-
+ margin-bottom:5px;
   margin-top:5px;
+	padding-bottom:50px;
+}
+
+.main-post img {
+	position:relative;
+	width: 100%;
+	height:400px;
+
+	margin-top:50px;
+
 
 }
 
-.one-post {
-    margin-top:10px;
+.main-text {
+	position:relative;
+	bottom:200px;
+	left:80px;
+	font-size:30px;
+	text-shadow:2px 0px rgba(0, 0, 0, 0.68);
+	padding:20px;
+	background:rgba(0, 0, 0, 0.31);
+	width:400px;
+}
+.main-text a {
+	text-decoration:none;
+	color:#000;
+	display:block;
 
+}
+
+
+.main-text:hover {
+	width:500px;
+	font-size:40px;
+}
+
+.one-post {
+    margin-top:0px;
 }
 .one-image img {
     padding-top:10px;
@@ -185,6 +231,8 @@ a {margin:0px;
   background:#fff;
   margin-bottom:5px;
   margin-top:5px;
+
+  padding-bottom:10px;
 }
 
 .side-title {
@@ -196,6 +244,7 @@ a {margin:0px;
 		color:#fff;
     padding-bottom:10px;
 		padding-top:10px;
+		margin-bottom:10px;
 }
 
 .side-title p {
@@ -208,13 +257,13 @@ a {margin:0px;
     font-weight:bold;
     width:100%;
     background:#000;
-		color:#fff;
+	color:#fff;
     padding-bottom:10px;
-		padding-top:10px;
+	padding-top:10px;
 }
 
 .one-side {
-    width:95%;
+    width:100%;
 }
 
 .one-side-title  {
@@ -223,17 +272,20 @@ a {margin:0px;
 .one-side-title a {
 
     color:black;
+	text-decoration:none;
 
 }
-.one-side-title a:hover {
+.one-side a:hover {
     color:rgb(101, 125, 98);
 }
+
 .one-side img {
     display:block;
     margin:0 auto;
     padding-top:10px;
 	width:260px;
 	height:270px;
+
 }
 
 .date-author {
@@ -244,14 +296,40 @@ a {margin:0px;
 
 #footer {
   width:100%;
-  height:100px;
+  height:200px;
   background:#fff;
   clear:both;
+
+
+}
+
+.info-footer {
+	text-align:center;
+	position:relative;
+	top:30px;
+
+}
+
+.info-footer h4 {
+	font-size:20px;
+}
+.info-footer h4, p {
+	padding:3px;
+}
+
+.info-footer span {
+	font-size:20px;
+	color:rgb(101, 125, 98);
+}
+
+.social-foot {
+	top:30px;
 }
 
 .social {
   position:relative;
-	text-align:center;
+text-align:center;
+
 
 }
 

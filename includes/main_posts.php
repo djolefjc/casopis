@@ -1,7 +1,32 @@
 <?php
 
-
+/* BIG MAIN POST START */
                     if(!isset($_GET['cat'])) {
+
+                        $run_main_post = mysqli_query($con,"SELECT * FROM posts ORDER BY post_id DESC LIMIT 1");
+
+                        $row_main_post = mysqli_fetch_array($run_main_post);
+
+                        $main_id = $row_main_post['post_id'];
+                        $main_title = $row_main_post['post_title'];
+                        $main_date = $row_main_post['post_date'];
+
+                        $main_image = $row_main_post['post_image'];
+
+                        echo "
+                            <div class='main-post'>
+
+                            <img src='admin/news_images/$main_image'align='center' />
+                            </div>
+
+                            <div class='main-text'>
+                            <h2><a href='details.php?post=$main_id'> $main_title </a></h2>
+                            </div>
+                        ";
+
+
+
+/* BIG MAIN POST END */
 
                 $run_posts = mysqli_query($con,  "SELECT * FROM posts ORDER BY rand() LIMIT 0,4");
 
@@ -19,7 +44,6 @@
                         $post_content = substr($post_content,0,800);
 
                         echo "
-
                             <div class='one-post cf'>
 
                                 <h2 class='one-title'>
@@ -47,7 +71,7 @@
                                 </span>
                                 </div>
 
-                            </div> <br />
+                            </div> <br /> 
 
                         ";
                 }
