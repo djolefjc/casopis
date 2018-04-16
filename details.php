@@ -65,11 +65,15 @@
                                   echo "
 
                                       <div class='details-post'>
-
+                                      <br />
+                                        <br />
                                           <h2 class='details-title'>
                                            $post_title
                                           </h2>
-
+                                          <br />
+                                            <br />
+                                          <hr />
+                                          <div class='content-container'>
                                           <div class='details-img'>
                                           <img src='admin/news_images/$post_image'/>
 
@@ -81,11 +85,11 @@
                                               $post_content
 
                                           </div>
-
+                                          </div>
                                           <div class='details-end'>
                                           <span class='details-date'>
                                            $post_date
-                                          </span>
+                                          </span>  |
                                           <span class='details-author'>
                                           $post_author
                                           </span>
@@ -104,7 +108,7 @@
 
       <div id="side" >
 
-        
+
 
             <div class="side-title">
                <p>

@@ -92,7 +92,7 @@ if(isset($_POST['comment_text'])) {
 
   if($comment_email=='' or $comment_text == '') {
     echo "<script>alert('Molimo Vas popunite sva polja')</script>";
-    echo"<scripit>window.open('details.php?post=$post_id')</scripit>";
+    echo"<script>window.open('details.php?post=$post_id','_self')</script>";
     exit();
   }
 
