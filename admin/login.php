@@ -48,16 +48,21 @@
     <div class="container-login">
 
     <div class="login-form">
-      <span class="login-text">Login</span>
+      <h2>Login</h2>
       <form method="post" action="">
-        <input type="text" name="user_name" placeholder="Username" required="required" />
+        <input type="text" name="user_name" placeholder="Korisnicki nalog" required="required" />
         <br />
-        <input type="password" name="user_password" placeholder="Password" required="required" />
+        <input type="password" name="user_password" placeholder="Korisnicka sifra" required="required" />
         <br />
-        <input type="submit" class="login-button" name="login"></input>
+        <input type="submit" class="login-button" name="login" value="Prijavite se"> </input>
       </form>
     </div> <!-- END login -->
+    <div class="back-home">
+      <a href="../index.php">
+        Nazad na pocetnu
+        </a>
 
+    </div>
   </div> <!-- END container-login -->
   </body>
 </html>

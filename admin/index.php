@@ -14,13 +14,15 @@ else {
     <head>
         <meta charset="utf-8">
         <link href="style1.css" rel="stylesheet" type="text/css" />
+            <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <title>insert+</title>
     </head>
     <body>
         <div id="container">
 
         <div id="head">
-            <h1>VASA KONTROLNA STRANICA</h1>
+          <a href="index.php"><h1>VAŠA KONTROLNA STRANICA</h1></a>
+        <a href="index.php"><span><i class="fas fa-home"></i></span></a>
         </div> <!-- END head -->
 
 
@@ -55,32 +57,34 @@ else {
                 </a>
             </div>
         </div><!-- END side -->
+        <div class="notifications">
+        <span class='com-notification'>
+                Komentari
+                <?php
+
+                include('includes/database.php');
+
+
+
+                $run_comments = mysqli_query($con, "SELECT * FROM comments WHERE status = 'unapprove'");
+
+                $count_comments = mysqli_num_rows($run_comments);
+
+                echo "(<a href='index.php?view_com'>" . $count_comments . "</a>)  |";
+
+                 ?>
+
+          </span>
+          <span class="vis-notifications">
+              <?php
+              include('../counter.php');
+               ?>
+
+          </span>
+        </div> <!-- END notifications -->
+
         <div id="main">
-            <div class="notifications">
-            <span class='com-notification'>
-                    Komentari
-                    <?php
 
-                    include('includes/database.php');
-
-
-
-                    $run_comments = mysqli_query($con, "SELECT * FROM comments WHERE status = 'unapprove'");
-
-                    $count_comments = mysqli_num_rows($run_comments);
-
-                    echo "(<a href='index.php?view_com'>" . $count_comments . "</a>)  |";
-
-                     ?>
-
-              </span>
-              <span class="vis-notifications">
-                  <?php
-                  include('../counter.php');
-                   ?>
-
-              </span>
-            </div> <!-- END notifications -->
             <?php
 
 
