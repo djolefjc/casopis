@@ -113,6 +113,10 @@ body {
 .notifications a {
     color:red;
 }
+#main .post-insert img {
+    width:250px;
+    height:250px;
+}
 /* START side */
 #side {
   float:left;
