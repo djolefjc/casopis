@@ -27,31 +27,32 @@ else {
 
 
         <div id="side">
-            <div class="menu">
+            <div class="menu l">
                 <a href="index.php?insert_post">
-                    IZBACI NOVU VEST
+                    IZBACI NOVU OBJAVU
                 </a>
             </div>
 
-            <div class="menu">
+            <div class="menu r objave">
                 <a href="index.php?view_posts">
                     POGLEDAJ SVE OBJAVE
                 </a>
             </div>
 
-            <div class="menu">
+            <div class="menu l">
                 <a href="index.php?view_cats">
                     POGLEDAJ SVE KATEGORIJE
                 </a>
             </div>
 
-            <div class="menu">
+            <div class="menu r">
                 <a href="index.php?view_com">
                     POGLEDAJ SVE KOMENTARE
                 </a>
             </div>
 
-            <div class="menu">
+            <div class="menu l odjavise">
+
                 <a href="logout.php">
                     ODJAVI SE
                 </a>

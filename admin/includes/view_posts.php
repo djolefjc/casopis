@@ -27,8 +27,8 @@ else {
             <th>AUTOR</th>
             <th>SLIKA</th>
             <th>KOMENTARI</th>
-            <th>IZMENI</th>
-            <th>IZBRISI</th>
+            <th><i class="fas fa-pen-square"></i></th>
+            <th><i class="fas fa-minus-circle"></i></th>
         </tr>
 
         <?php

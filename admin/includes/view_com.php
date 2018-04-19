@@ -22,7 +22,7 @@ else {
     <body>
         <div class="view-posts">
             <table>
-            <th class="view-posts-title" colspan="7"> <h2>SVI KOMENTARE</h2></th>
+            <th class="view-posts-title" colspan="7"> <h2>SVI KOMENTARI</h2></th>
             <tr>
             <th>ID KOMENTARA</th>
 
@@ -31,8 +31,8 @@ else {
             <th> KOMENAR    </th>
             <th>IME</th>
             <th> EMAIL  </th>
-            <th> STATUS    </th>
-            <th> IZBRISI  </th>
+            <th> <i class="fas fa-question-circle"></i>   </th>
+            <th> <i class="fas fa-minus-circle"></i> </th>
 
         </tr>
 
@@ -78,10 +78,10 @@ else {
 
         if($status=="approve") {
 
-          echo "<a href='index.php?unapprove=$com_id'>Unapprove</a>";
+          echo "<a href='index.php?unapprove=$com_id'>Sakrij</a>";
         }
         elseif($status="unapprove") {
-          echo "<a href='index.php?approve=$com_id'>Approve</a>";
+          echo "<a href='index.php?approve=$com_id'>Dozvoli</a>";
         }
 
 
@@ -111,4 +111,3 @@ else {
 
 }
    ?>
-

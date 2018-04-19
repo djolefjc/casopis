@@ -27,8 +27,8 @@ else {
             <tr>
             <th>ID KATEOGRIJE</th>
             <th> IME KATEGORIJE    </th>
-            <th>IZMENI</th>
-            <th> IZBRISI  </th>
+            <th><i class="fas fa-pen-square"></i></th>
+            <th> <i class="fas fa-minus-circle"></i>  </th>
         </tr>
 
         <?php
