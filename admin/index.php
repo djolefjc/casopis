@@ -14,6 +14,7 @@ else {
     <head>
         <meta charset="utf-8">
         <link href="style1.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <title>insert+</title>
     </head>

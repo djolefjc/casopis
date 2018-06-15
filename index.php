@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
   </head>
@@ -51,7 +52,7 @@
 
       <div id="side" >
 
-    
+
 
             <div class="side-title">
                <p>

@@ -240,3 +240,39 @@ margin-bottom:90px;
 }
 
 /* END login */
+/* START index(admin) width 960px */
+#head {
+    width:960px;
+}
+#container {
+    width:960px;
+}
+#main {
+    width:688px;
+    padding-left:0px;
+}
+.post-insert-content {
+    margin-left:46px;
+}
+#side {
+    width:260px;
+}
+#side .l {
+    float:left;
+    margin-bottom:100px;
+    margin-left:5px;
+}
+#side .r {
+    float:right;
+    margin-top:100px;
+    margin-right:5px;
+}
+
+#side .l:last-child {
+    margin-bottom:10px;
+}
+#side .l:first-child {
+margin-top:10px;
+margin-bottom:90px;
+}
+/* END index(admin) width 960px */

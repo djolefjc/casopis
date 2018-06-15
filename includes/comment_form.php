@@ -70,7 +70,7 @@ Postavi komentar:
 
      <span class="com-input2">
 
-     <textarea name="comment_text" cols="60" rows="10" />  </textarea>
+     <textarea name="comment_text" cols="53" rows="10" />  </textarea>
    </span>
    </div>
    <div class="com-button">
